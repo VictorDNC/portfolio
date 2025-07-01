@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfólio Victor - Bootstrap</title>
-
+    <title>Victor's Portfolio</title>
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
@@ -16,17 +17,17 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
             <div class="container">
-                <a class="navbar-brand fw-bold text-primary" href="#">Victor Dev</a>
+                <a class="navbar-brand fw-bold text-muted" href="#">VictorDNC</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,39 +36,45 @@
 
     <!-- Seção Home -->
     <section id="home"
-        class="vh-100 d-flex align-items-center justify-content-center bg-primary text-white text-center">
+        class="vh-100 d-flex align-items-center justify-content-center bg-primary text-white text-center px-3">
         <div>
-            <h1 class="display-4 fw-bold mb-3">Olá, eu sou o Victor</h1>
-            <p class="lead mb-4">Desenvolvedor Web Fullstack</p>
-            <a href="#projetos" class="btn btn-light btn-lg">Ver Projetos</a>
+            <h1 class="display-4 fw-bold mb-3">Hi, I'm Victor</h1>
+            <p class="lead">Fullstack web developer</p>
+            <p class="lead">Data Engineer</p>
+            <p class="lead mb-4">Kinda weird nerd</p>
+            <a href="#project" class="btn btn-light btn-lg">Check Projects</a>
         </div>
     </section>
 
     <!-- Seção Sobre -->
-    <section id="sobre" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="mb-4">Sobre Mim</h2>
+    <section id="about" class="py-5 bg-light text-center px-3">
+        <div class="container">
+            <h2 class="mb-4">About me</h2>
             <p class="lead text-muted mx-auto" style="max-width:600px;">
-                Sou desenvolvedor apaixonado por tecnologia, com foco em aplicações web modernas.
-                Estudo constantemente para evoluir minhas habilidades em front-end e back-end.
+                Guitarist, gamer, husband, all those things I'm pretty decent at it, but
+                the true thing that I'm <b>really</b> good at, (besides logic 🤓) is <b>deliver</b>!</br>
+                Give me a task, for sure will be completed with precision and commitment.
             </p>
         </div>
     </section>
 
     <!-- Seção Projetos -->
-    <section id="projetos" class="py-5">
+    <section id="project" class="py-5 px-3">
         <div class="container">
-            <h2 class="text-center mb-5">Projetos</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-4">
                     <div class="card shadow-sm h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Projeto 1</h5>
-                            <p class="card-text">Descrição breve do projeto. Tecnologias usadas, propósito, etc.</p>
-                        </div>
+                        <a href="/page/api-request.html" class="link-projeto">
+                            <div class="card-body">
+                                <h5 class="card-title">API Request</h5>
+                                <p class="card-text">Lorem Ipsum de itu do cazebre do projeto. Tecnologias usadas,
+                                    propósito, etc.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <!-- <div class="col-12 col-md-4">
                     <div class="card shadow-sm h-100">
                         <div class="card-body">
                             <h5 class="card-title">Projeto 2</h5>
@@ -75,26 +82,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-md-4">
                     <div class="card shadow-sm h-100">
                         <div class="card-body">
                             <h5 class="card-title">Projeto 3</h5>
                             <p class="card-text">Descrição breve do projeto. Tecnologias usadas, propósito, etc.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contato" class="bg-dark text-white py-4">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <p class="mb-2 mb-md-0">&copy; 2025 Victor Della Negra Crepaldi. Todos os direitos reservados.</p>
-            <div>
-                <a href="#" class="text-white text-decoration-none me-3">LinkedIn</a>
-                <a href="#" class="text-white text-decoration-none me-3">GitHub</a>
-                <a href="mailto:seuemail@exemplo.com" class="text-white text-decoration-none">Email</a>
+    <footer id="contact" class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 Victor Della Negra Crepaldi. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.linkedin.com/in/victor-della-negra-crepaldi/" target="_blank"
+                        rel="noopener noreferrer" class="text-white text-decoration-none me-3">LinkedIn</a>
+                    <a href="https://github.com/VictorDNC/" target="_blank" rel="noopener noreferrer"
+                        class="text-white text-decoration-none me-3">GitHub</a>
+                    <a href="mailto:victor_dnc@hotmail.com" class="text-white text-decoration-none">Email</a>
+                </div>
             </div>
         </div>
     </footer>
